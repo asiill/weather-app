@@ -5,7 +5,6 @@ const getLocalTime = (timeZone) => {
     let localT = utc + (timeZone * 1000);
     let localDT = new Date(localT);
     let formattedTime = `${localDT.getHours()} h ${localDT.getMinutes()}`;
-    console.log(formattedTime);
     return formattedTime;
 }
 
