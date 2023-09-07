@@ -14,7 +14,7 @@ const setWeatherDisplay = async (promise) => {
 
     time.textContent = getLocalTime(data.timeZone);
     location.textContent = `${data.city}, ${data.country}`;
-    weatherIcon.src = `../dist/images/${data.weatherIcon}.png`;
+    weatherIcon.src = `./images/${data.weatherIcon}.png`;
     weatherIcon.alt = `${data.description}`;
     description.textContent = `${data.description}`.charAt(0).toUpperCase() + `${data.description}`.slice(1);
     temp.textContent = `${data.temp} °C`;
