@@ -1,7 +1,9 @@
+import getLocalTime from "./utils.js";
+
 const setWeatherDisplay = async (promise) => {
     const data = await(promise);
 
-    //const time = document.getElementById("time");
+    const time = document.getElementById("time");
     const location = document.getElementById("location");
     const weatherIcon = document.getElementById("weather-icon");
     const description = document.getElementById("description");
@@ -10,7 +12,7 @@ const setWeatherDisplay = async (promise) => {
     const humidity = document.getElementById("humidity");
     const wind = document.getElementById("wind");
 
-    //time.textContent = 
+    time.textContent = getLocalTime(data.timeZone);
     location.textContent = `${data.city}, ${data.country}`;
     weatherIcon.src = `../dist/images/${data.weatherIcon}.png`;
     weatherIcon.alt = `${data.description}`;

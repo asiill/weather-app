@@ -8,7 +8,6 @@ const getWeatherData = async (location) => {
 
         const relevantData = {
             timeZone: data.timezone,
-            dt: data.dt,
             city: data.name,
             country: data.sys.country,
             weatherIcon: data.weather[0].icon,
