@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root {
+    /* base font family */
+    --ff-base: "Roboto", sans-serif;
+
+    /* base font size */
+    --fs-base: 14px;
+
+    /* base padding */
+    --padding-base: 8px;
+
+    /* image dimensions */
+    --id-small: 20px;
+    --id-large: 100px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to right, #b9ee9a, #4398a0);
+}
+
+#content {
+    margin: 40px auto;
+    font-family: var(--ff-base);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+/* --- Search bar --- */
+
+#search-form {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    padding: var(--padding-base);
+    font-size: var(--fs-base);
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 20px;
+}
+
+input:focus {
+    border: 1px solid #2e2ea1;
+}
+
+#submit-btn {
+    padding: var(--padding-base);
+    font-size: var(--fs-base);
+    background-color: #FFFFFF;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: var(--id-small);
+    height: var(--id-small);
+}
+
+/* --- Time and city display --- */
+
+#time-city {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#time-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#time-wrapper>img {
+    width: var(--id-small);
+    height: var(--id-small);
+}
+
+/* --- Weather display --- */
+
+#weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+#weather-icon {
+    width: var(--id-large);
+    height: var(--id-large);
+}
+
+#temp-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+#info {
+    display: flex;
+    gap: 20px;
+}
+
+#info>img {
+    width: var(--id-small);
+    height: var(--id-small);
+}
+
+#humidity-wrapper,#wind-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

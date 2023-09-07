@@ -4,11 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather app</title>
-
     <link rel="stylesheet" href="./style.css">
     <script src="main.js" defer></script>
 </head>
 <body>
-    
+    <div id="content">
+        <form id="search-form" action="" method="get">
+            <input type="text" name="location-input" id="location-input" placeholder="Enter city">
+            <button type="submit" id="submit-btn"><img src="./images/search.svg" alt="magnifying glass"></button>
+        </form>
+
+        <div id="time-city">
+            <div id="time-wrapper">
+                <img src="./images/clock.svg" alt="clock">
+                <p>16h00</p>
+            </div>
+            <div id="location-wrapper">
+                <p id="location"></p>
+            </div>
+        </div>
+
+        <div id="weather">
+            <div id="weather-icon-wrapper">
+                <img id="weather-icon" src="" alt="">
+            </div>
+            <div id="temp-wrapper">
+                <h5 id="description"></h4>
+                <h1 id="actual-temp"></h1>
+                <h5 id="feels-like"></h5>
+            </div>
+            <div id="info">
+                <div id="humidity-wrapper">
+                    <img src="./images/humidity.svg" alt="water waves">
+                    <p id="humidity"></p>
+                </div>
+                <div id="wind-wrapper">
+                    <img src="./images/wind.svg" alt="gusts of wind">
+                    <p id="wind"></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </body>
 </html>
