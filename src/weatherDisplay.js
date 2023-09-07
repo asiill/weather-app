@@ -10,9 +10,9 @@ const setWeatherDisplay = async (promise) => {
     const humidity = document.getElementById("humidity");
     const wind = document.getElementById("wind");
 
-    //time;
+    //time.textContent = 
     location.textContent = `${data.city}, ${data.country}`;
-    weatherIcon.src = `https://openweathermap.org/img/wn/${data.weatherIcon}@4x.png`;
+    weatherIcon.src = `../dist/images/${data.weatherIcon}.png`;
     weatherIcon.alt = `${data.description}`;
     description.textContent = `${data.description}`.charAt(0).toUpperCase() + `${data.description}`.slice(1);
     temp.textContent = `${data.temp} °C`;

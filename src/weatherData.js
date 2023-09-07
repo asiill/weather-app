@@ -7,7 +7,8 @@ const getWeatherData = async (location) => {
         const data = await response.json();
 
         const relevantData = {
-            timezone: data.timezone,
+            timeZone: data.timezone,
+            dt: data.dt,
             city: data.name,
             country: data.sys.country,
             weatherIcon: data.weather[0].icon,
