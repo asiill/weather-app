@@ -1,5 +1,5 @@
 # Weather app
-A weather app created using HTML, CSS and Javascript.
+A Javascript weather application.
 
 ## Demo
 https://asiill.github.io/weather-app/
